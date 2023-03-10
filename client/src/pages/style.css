@@ -1,0 +1,39 @@
+/* // @import './../../node_modules/bootstrap/scss/functions';
+// @import './../../node_modules/bootstrap/scss/variables';
+// @import './../../node_modules/bootstrap/scss/mixins';
+// @import './../../node_modules/bootstrap/scss/reboot';
+// @import './../../node_modules/bootstrap/scss/type';
+// @import './../../node_modules/bootstrap/scss/forms';
+// @import './../../node_modules/bootstrap/scss/buttons'; */
+
+$xsMaxBreakpoint: 575px;
+$smMinBreakpoint: 576px;
+$mdMinBreakpoint: 768px;
+$lgMinBreakpoint: 992px;
+$xlMinBreakpoint: 1200px;
+
+.container {
+  @media (max-width: $xsMaxBreakpoint) {
+    width: 100%;
+    padding: 20px;
+  }
+  @media (min-width: $smMinBreakpoint) {
+    width: 500px;
+    margin: 100px auto;
+  }
+}
+
+.whoisResult {
+  margin-top: 50px;
+
+  .infoGroup {
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .infoKey {
+      font-weight: bold;
+    }
+  }
+}
